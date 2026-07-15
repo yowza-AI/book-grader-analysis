@@ -150,38 +150,14 @@ This matters for architect roles: shows how to direct AI tools for velocity with
 
 ---
 
-## For Technical Interviews
 
-See [ARCHITECT_NOTES.md](ARCHITECT_NOTES.md) for:
-- What to look for in code review
-- Technical questions I'd ask candidates
-- What this architecture demonstrates about design thinking
+## Development Approach
 
-**Key Interview Questions**:
-1. "Why is the mock provider important? Why not just test with the real LLM?"
-2. "If quality depends on model choice, how did you avoid re-architecting when switching models?"
-3. "What happens if the LLM hallucinates content that doesn't exist in the book?"
-4. "How would you scale this to 1M books? What breaks first?"
-5. "Why local-first? What's the privacy tradeoff?"
+
+This matters for architect roles: shows how to direct AI tools for velocity without compromising architectural integrity. Every layer boundary, provider abstraction, and testing strategy reflects deliberate choices.
 
 ---
 
-## Full Code
-
-**This repository contains architecture and design philosophy.** Full source code is private.
-
-For technical interviews, I can grant read-only access to the complete codebase:
-- Python analysis pipeline (chunking, extraction, aggregation)
-- Pluggable provider abstraction (mock, llamacpp, openai_compatible)
-- FastAPI REST API
-- SQLite schema + queries
-- Test suite (100% runs without a model)
-- Web UI (FastAPI + embedded HTML)
-
-**Contact**: yow.stephend@gmail.com
-
----
-
-**Status**: Production ready (Phase 1 complete)  
-**Hardware Tested**: Intel i9-13900H / 16GB RAM (CPU inference with Qwen 4B)  
+**Status**: Production ready (Phase 1 complete)
+**Hardware Tested**: Intel i9-13900H / 16GB RAM (CPU inference with Qwen 4B)
 **Models Verified**: Qwen 3.5 4B-Q4_K_M (llama.cpp)
