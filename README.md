@@ -150,14 +150,6 @@ This matters for architect roles: shows how to direct AI tools for velocity with
 
 ---
 
-
-## Development Approach
-
-
-This matters for architect roles: shows how to direct AI tools for velocity without compromising architectural integrity. Every layer boundary, provider abstraction, and testing strategy reflects deliberate choices.
-
----
-
 **Status**: Production ready (Phase 1 complete)
 **Hardware Tested**: Intel i9-13900H / 16GB RAM (CPU inference with Qwen 4B)
 **Models Verified**: Qwen 3.5 4B-Q4_K_M (llama.cpp)
